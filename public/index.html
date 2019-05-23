@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feedbacks
+    </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body >
+    <h1 >Medallia Feedbacks</h1>
+    <br><br>
+    <div id="contentBox" style="margin:0px auto">
+        <div id="column1" style="float:left; margin:0; width:33%;">
+            <form id="feedForm">
+                <h1 >Add your feedback</h1>
+                  <div>    
+                        <textarea id="feed" name="user_feedback"></textarea>
+                      </div>  
+                  <div>
+                    <input class="btn" type="button" onclick="sendFeedback()" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <div id="column2" style="float:left; margin:0;width:33%;">
+            <form id="idForm">
+                <h1 >Get feedback</h1>
+                  <div>
+                        <input type="text" name="index" value="Enter ID"></input>
+                      </div>
+                 <br>
+                  <div>
+                    <input class="btn" type="button" onclick="getFeedbackById()" value="Go">
+                </div>
+                
+                <div>
+                    <input class="btn" type="button" onclick="getAll()" value="Get All Feedbacks">
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div id="column1" style="float:left; margin:0; width:33%;">
+            <h1 >Server response</h1>
+            <div id="feedbacksContainer"></div>
+        </div>
+    </div>
+    
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
